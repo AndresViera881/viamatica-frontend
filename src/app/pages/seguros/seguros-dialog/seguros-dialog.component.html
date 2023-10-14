@@ -1,0 +1,28 @@
+<div>
+  <mat-form-field>
+      <input matInput placeholder="Seguro" [(ngModel)]="seguroModel.nombre" maxlength="10">
+  </mat-form-field>
+
+  <br />
+
+  <mat-form-field>
+    <input matInput placeholder="Código" [(ngModel)]="seguroModel.codigo">
+</mat-form-field>
+
+<br />
+
+<mat-form-field>
+  <input matInput placeholder="Suma asegurada" [(ngModel)]="seguroModel.sumaAsegurada">
+</mat-form-field>
+
+<br />
+
+<mat-form-field>
+  <input matInput placeholder="Prima" [(ngModel)]="seguroModel.prima">
+</mat-form-field>
+
+<br />
+
+</div>
+<button mat-raised-button color="primary" (click)="operar()">Aceptar</button>
+<button mat-raised-button color="accent" (click)="cerrar()">Cancelar</button>

@@ -1,0 +1,38 @@
+<div>
+  <mat-form-field>
+      <input matInput placeholder="Cédula" [(ngModel)]="aseguradoModel.cedula" maxlength="10">
+  </mat-form-field>
+
+  <br />
+
+  <mat-form-field>
+    <input matInput placeholder="Nombres" [(ngModel)]="aseguradoModel.nombre">
+</mat-form-field>
+
+<br />
+
+<mat-form-field>
+  <input matInput placeholder="Apellidos" [(ngModel)]="aseguradoModel.apellido">
+</mat-form-field>
+
+<br />
+
+<mat-form-field>
+  <input matInput placeholder="Telefono" [(ngModel)]="aseguradoModel.telefono" maxlength="10">
+</mat-form-field>
+
+<br />
+
+<mat-form-field>
+  <input matInput placeholder="Edad" [(ngModel)]="aseguradoModel.edad" maxlength="2">
+</mat-form-field>
+
+<br />
+
+
+  <input type="file" (change)="subirArchivo($event)" >
+
+
+</div>
+<button mat-raised-button color="primary" (click)="operar()">Aceptar</button>
+<button mat-raised-button color="accent" (click)="cerrar()">Cancelar</button>

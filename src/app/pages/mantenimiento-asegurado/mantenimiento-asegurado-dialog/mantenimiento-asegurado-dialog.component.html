@@ -1,0 +1,22 @@
+<div>
+  <mat-form-field>
+    <mat-select [(ngModel)]="mantenimientoModel.idAsegurado" placeholder="Escoga el asegurado" >
+      <mat-option *ngFor="let asegurado of aseguradosArray" [value]="asegurado.idAsegurado" >
+        {{asegurado.nombre + ' ' + asegurado.apellido}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+<br />
+
+<mat-form-field>
+  <mat-select [(ngModel)]="mantenimientoModel.idSeguro" placeholder="Escoga el seguro" >
+    <mat-option *ngFor="let seguro of segurosArray" [value]="seguro.idSeguro" >
+      {{seguro.nombre}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+</div>
+<button mat-raised-button color="primary" (click)="operar()">Aceptar</button>
+<button mat-raised-button color="accent" (click)="cerrar()">Cancelar</button>
